@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>KuraSu</title>
+    <link rel="icon" href="/Kurakani-logo.png">
+    <meta property="og:image" content="https://i.ibb.co/cxj9GbS/Kurakani-logo.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:alt" content="KuraKani-Logo" />
+    <script src="/js/anime.min.js"></script>
+    <link rel="stylesheet" href="/css/themeChoose.css">
+
+</head>
+
+<body onload="floatIn()">
+    <div class="circle"></div>
+    <main>
+
+        <!-- <a href="/chat/:KaKT"> -->
+        <div class="themes">
+            <div class="theme" onclick="original()">
+                <div class="themeImage">
+                    <img src="/kurakani-theme.png" height="100%" width="100%">
+                </div>
+                <center>
+                    <div class="themeTitle">
+                        KuraKani
+                    </div>
+                    <div class="desc">
+                        Its the original Theme of KuraKani. It has mobile Responsive feature. It has both dark and
+                        light
+                        mode. Design is cool and unique.
+                    </div>
+
+                </center>
+            </div>
+            <!-- </a> -->
+            <!-- <a href="/chat/:DcDT"> -->
+            <div class="theme" onclick="discord()">
+                <div class="themeImage">
+                    <img src="/selectRocket.png" height="100%" width="100%">
+                </div>
+                <center>
+                    <div class="themeTitle">
+                        Rocket
+                    </div>
+                    <div class="desc">
+                        Its an small rocket game. Space stone spawns randomly on your way and you have to drive rocket
+                        carefully. If u hit 1 stone then its game over.
+                    </div>
+
+                </center>
+            </div>
+            <!-- </a> -->
+        </div>
+    </main>
+    <script>
+        function floatIn() {
+            anime({
+                targets: '.themes',
+                top: '50%',
+
+            })
+        }
+        function discord() {
+            anime({
+                targets: '.circle',
+                left: '50%',
+                top: '50%',
+                width: '200%',
+                height: '200%',
+                borderRadius: ['0%', '30%'],
+                easing: 'easeInOutQuad',
+                update: function discord() {
+                    window.location.href = '/rocket';
+                }
+            }
+            );
+
+        }
+        function original() {
+            anime({
+                targets: '.circle',
+                left: '50%',
+                top: '50%',
+                width: '200%',
+                height: '200%',
+                borderRadius: ['0%', '30%'],
+                easing: 'easeInOutQuad',
+                update: function discord() {
+                    window.location.href = '/chat/KaKT';
+                }
+            }
+            );
+
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

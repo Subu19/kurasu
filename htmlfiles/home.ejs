@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="KuraSu is a live group chat which is still under maintainance. If you are reading this then you are
+    looking at Alpha
+    version of KuraSu. KuraSu offers/will offer faster chatting rooms in different environment. You will
+    be able to set your own theme
+    using a config file provided by us. There are many more featutre which are still in pending. Hope
+    you will like it.
+    " />
+    <meta property="og:image" content="https://i.ibb.co/cxj9GbS/Kurakani-logo.png" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:alt" content="KuraKani-Logo" />
+    <meta name="keywords" content="Live, Chat, Faster Chat, Group chat, Global Chat" />
+    <link rel="icon" href="/Kurakani-logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Download KuraSu</title>
+    <style>
+        body {
+            background-color: rgb(12, 4, 32);
+            color: white;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .logoContainner {
+            height: 90px;
+            width: 70%;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        .logoBox {
+            height: 100%;
+            width: 100%;
+        }
+
+        #logo {
+            fill: white;
+
+        }
+
+        #line {
+            color: white;
+        }
+
+        .main {
+            position: absolute;
+            top: 200px;
+            width: 90%;
+            height: 500px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .intro {
+            height: 100%;
+            flex: 1;
+        }
+
+        .info {
+            margin: 30px;
+            max-width: 500px;
+        }
+
+        .image {
+            margin-top: -100px;
+            padding: 10px;
+            flex: 1;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .image img {
+            border-radius: 10px;
+            width: 280px;
+            height: 280px;
+            box-shadow: aqua 1px 1px 70px;
+            transition: 0.6s;
+        }
+
+        .image:hover img {
+            transition: 0.6s;
+            box-shadow: crimson 1px 1px 70px;
+
+
+        }
+
+        #ball {
+            fill: white;
+            transition: 2s;
+            animation: ballanimation infinite 1s ease-in-out;
+        }
+
+        @keyframes ballanimation {
+            0% {
+                transform: translateY(0px);
+
+            }
+
+            50% {
+                transform: translateY(-30px);
+
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 0px;
+            border-radius: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: gray;
+            border-radius: 5px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: white;
+            border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: white;
+        }
+
+        button {
+            height: 50px;
+            width: 100px;
+            background-color: crimson;
+            outline: none;
+            border-radius: 0%;
+            border-style: none;
+            font-size: 15px;
+            color: white;
+            font-weight: bold;
+            transition: 0.5s;
+            box-shadow: crimson 1px 1px 10px;
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background-color: rgb(76, 167, 167);
+            box-shadow: rgb(43, 240, 141) 0px 5px 5px;
+            transition: 0.5s;
+
+        }
+
+        @media screen and (max-width: 400px) {
+            body {
+                margin-top: 30px;
+                background-color: rgb(12, 4, 32);
+                color: white;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+
+            .logoContainner {
+
+                margin: auto;
+                height: 90px;
+                width: 70%;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            .logoBox {
+                height: 100%;
+                width: 100%;
+            }
+
+            #logo {
+                fill: white;
+
+            }
+
+            #line {
+                color: white;
+            }
+
+            .main {
+                display: block;
+                margin-top: 50px;
+                width: 90%;
+                height: 500px;
+                margin: auto;
+
+            }
+
+            .intro {
+                height: 100%;
+                width: 90%;
+            }
+
+            .info {
+                margin: 30px;
+                max-width: 250px;
+            }
+
+            .image {
+
+                padding: 10px;
+                height: 100%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .image img {
+                border-radius: 10px;
+                width: 240px;
+                height: 240px;
+                box-shadow: aqua 1px 1px 40px;
+                transition: 0.6s;
+            }
+
+            .image:hover img {
+                transition: 0.6s;
+                box-shadow: crimson 1px 1px 40px;
+
+
+            }
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logoContainner">
+        <svg class="logoBox" width="1109" height="334" viewBox="0 0 1109 334" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line id="Line" x1="474.685" y1="333.279" x2="656.685" y2="1.27896" stroke="black" stroke-width="3" />
+            <path id="logo" fill-rule="evenodd" clip-rule="evenodd"
+                d="M585.484 130.223L612.484 82.8079V165.5L703.469 64.25H736.094L655.516 154.672L742.422 269H710.078L637.516 173.797L612.484 199.812V269H585.484V130.223ZM27.7656 199.812L52.7969 173.797L125.359 269H157.703L70.7969 154.672L151.375 64.25H118.75L27.7656 165.5V64.25H0.765625V269H27.7656V199.812ZM223.234 271.812C242.828 271.812 257.688 265.859 267.812 253.953L268.375 269H293.125V116.844H267.109V227.516C260.547 242.328 247.328 249.734 227.453 249.734C208.703 249.734 199.328 238.203 199.328 215.141V116.844H173.312V215.844C173.406 234.312 177.672 248.281 186.109 257.75C194.641 267.125 207.016 271.812 223.234 271.812ZM393.531 139.203C398.125 139.203 402.391 139.531 406.328 140.188V116C403.703 114.688 399.859 114.031 394.797 114.031C379.141 114.031 367.047 120.828 358.516 134.422L358.094 116.844H332.781V269H358.797V161C364.891 146.469 376.469 139.203 393.531 139.203ZM515.031 252.969C515.311 255.262 515.616 257.346 515.945 259.222L540.625 216.622V163.391C540.25 148.016 535.094 135.969 525.156 127.25C515.219 118.438 501.484 114.031 483.953 114.031C472.891 114.031 462.719 116.094 453.438 120.219C444.25 124.344 436.938 129.969 431.5 137.094C426.156 144.125 423.484 151.438 423.484 159.031H449.641C449.641 152.375 452.781 146.703 459.062 142.016C465.344 137.328 473.125 134.984 482.406 134.984C493 134.984 501.016 137.703 506.453 143.141C511.891 148.484 514.609 155.703 514.609 164.797V176.75H489.297C467.453 176.75 450.484 181.156 438.391 189.969C426.391 198.688 420.391 210.969 420.391 226.812C420.391 239.844 425.172 250.625 434.734 259.156C444.391 267.594 456.719 271.812 471.719 271.812C488.5 271.812 502.938 265.531 515.031 252.969ZM498.719 242.844C491.406 247.062 483.672 249.172 475.516 249.172C466.984 249.172 460 246.875 454.562 242.281C449.125 237.688 446.406 231.312 446.406 223.156C446.406 204.5 462.344 195.172 494.219 195.172H514.609V226.391C511.328 233.141 506.031 238.625 498.719 242.844ZM852.25 252.969C853.188 260.656 854.406 266 855.906 269H883.188V266.75C879.625 258.5 877.844 247.391 877.844 233.422V163.391C877.469 148.016 872.312 135.969 862.375 127.25C852.438 118.438 838.703 114.031 821.172 114.031C810.109 114.031 799.938 116.094 790.656 120.219C781.469 124.344 774.156 129.969 768.719 137.094C763.375 144.125 760.703 151.438 760.703 159.031H786.859C786.859 152.375 790 146.703 796.281 142.016C802.562 137.328 810.344 134.984 819.625 134.984C830.219 134.984 838.234 137.703 843.672 143.141C849.109 148.484 851.828 155.703 851.828 164.797V176.75H826.516C804.672 176.75 787.703 181.156 775.609 189.969C763.609 198.688 757.609 210.969 757.609 226.812C757.609 239.844 762.391 250.625 771.953 259.156C781.609 267.594 793.938 271.812 808.938 271.812C825.719 271.812 840.156 265.531 852.25 252.969ZM835.938 242.844C828.625 247.062 820.891 249.172 812.734 249.172C804.203 249.172 797.219 246.875 791.781 242.281C786.344 237.688 783.625 231.312 783.625 223.156C783.625 204.5 799.562 195.172 831.438 195.172H851.828V226.391C848.547 233.141 843.25 238.625 835.938 242.844ZM944.078 135.969L943.234 116.844H918.625V269H944.641V160.578C948.203 153.266 953.172 147.359 959.547 142.859C965.922 138.359 973.328 136.109 981.766 136.109C992.172 136.109 999.812 138.734 1004.69 143.984C1009.66 149.234 1012.19 157.344 1012.28 168.312V269H1038.3V168.453C1038.02 132.172 1021.8 114.031 989.641 114.031C970.891 114.031 955.703 121.344 944.078 135.969ZM1079.78 269H1105.8V116.844H1079.78V269Z"
+                fill="black" />
+            <ellipse id="ball" cx="1093.5" cy="85" rx="15.5" ry="17" fill="black" />
+        </svg>
+
+
+
+    </div>
+    <div class="main">
+        <div class="image">
+            <img src="/Kurakani-logo.png">
+
+        </div>
+        <div class="intro">
+            <div class="info">
+                <h1>Live-Chat</h1>
+                <p>Kurakani is a live group chat which is still under maintainance. If you are reading this then you are
+                    looking at Alpha
+                    version of KuraKani. KuraKani offers/will offer faster chatting rooms in different environment. You
+                    will be able to set your own theme
+                    using a config file provided by us. There are many more featutre which are still in pending.
+                </p>
+                <h4>Thank you!</h4>
+                <br>
+                <a href="/downloadexe">
+                    <button>Download</button>
+                </a>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

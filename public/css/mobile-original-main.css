@@ -1,0 +1,235 @@
+ @media screen and (max-width: 700px){
+    .menuTrigger{
+        display: block;
+        height: 100%;
+        width: 50px;
+        float: right;
+        fill: crimson;         
+    }
+    
+    .sideMenu{
+        display: block;
+        transition: 0.2s;
+    }
+
+    .onlineListLink{
+        display: none;
+    }
+
+    .roomListLink{
+        display: none;
+    }
+
+    .sideMenu{
+        position: absolute;
+        top: 65px;
+        right: 0px;
+        height: calc(100vh - 70px);
+        max-width: 250px;
+        width: 250px;
+        transition: 0.3s;
+        margin: 0px;
+        border-radius: 0px;
+        transform: translateX(260px);
+    }
+    .toggleSideMenu{
+        transition: 0.3s;
+        transform: translateX(0px);
+        
+    }
+    .navLinks2{
+        display: flex;
+        height: 60px;
+        width: 100%;
+
+    }
+    .navs2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex: 1;
+    }
+    .onlineListLink2{
+        height: 40px;
+        width: 100px;
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+        border-radius: 10px;
+        box-shadow: rgb(223, 223, 223) 0px 0px 10px;
+        cursor: pointer;
+    }
+    .roomListLink2{
+        height: 40px;
+        width: 100px;
+        background-color: white;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+        border-radius: 10px;
+        box-shadow: rgb(223, 223, 223) 0px 0px 10px;
+        cursor: pointer;
+    }
+    .roomListLink2:hover{
+        background-color: rgb(190, 190, 190);
+    }
+    .onlineListLink2:hover{
+        background-color: rgb(180, 180, 180);
+    }
+    .settings{
+        flex-direction: column;
+        width: 98vw;
+    }
+    .settingContainner{
+        flex-direction: row;
+        flex: none;
+        max-height: 50px;
+        min-height: 50px;
+    }
+    .setting-hr{
+        display: none;
+    }
+    .closeSetting{
+        height: 30px;
+        width: 30px;
+        top: -65px;
+        z-index: 11;
+        right: -15px;
+    }
+    .subSettings{
+        overflow: initial;
+        max-height: 70vh;
+    }
+    .closeSettingContainner{
+        overflow: initial;
+    }
+    .subSetting{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+ }
+
+
+/* body{
+    overflow: hidden;
+    height:100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.nav{
+    height: 50px;
+}
+.logoContainner{
+    flex:4;
+}
+.onlineListLink{
+    display: none;
+
+}
+.roomListLink{
+    display: none;
+}
+
+.menuTrigger{
+    display: block;
+    height: 100%;
+    width: 50px;
+    float: right;
+    fill: black;
+}
+#topDarkMode{
+    display: none;
+    
+}
+.mainBox{
+    display: inline;
+}
+.sideMenu{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    max-width: 250px;
+    width: 0px;
+    transition: 0.3s;
+    border-style: none;
+    margin: 0px;
+}
+.chatBox{
+    width: 100%;
+    transition: 0.3s;
+
+}
+
+
+.navLinks2{
+    position: absolute;
+    top: 50px;
+    height: 30px;
+    right: 0px;
+    width: 250px;
+    display: flex;
+    justify-items: center;
+    justify-content:space-around;
+    cursor: pointer;
+    z-index:2;
+    
+}
+.navs2{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content:space-around;
+    cursor: pointer;
+}
+.onlineListLink2{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    float: left;
+
+}
+.onlineListLink2:hover {
+    background-color: white;
+    transition: 0.3s;
+    color: black;
+}
+.roomListLink2{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    float: left;
+
+}
+.roomListLink2:hover{
+    background-color: white;
+    transition: 0.3s;
+    color: black;
+}
+.onlineList{
+    padding-top: 100px;
+}
+.roomList{
+    padding-top: 100px;
+}
+} */

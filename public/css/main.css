@@ -1,0 +1,467 @@
+body {
+    background-color: darkcyan;
+    margin: 0px;
+    height: 100%;
+    font-family: Arial;
+    overflow: hidden;
+}
+main{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.night-body{
+    background-color:#052631;
+    margin: 0px;
+    font-family:Arial;
+}
+.preLoaderDiv{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 5;
+    display: block;
+    background-color:darkcyan;
+    justify-content: center;
+
+}
+
+.loadingBox{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loading{
+    
+    box-shadow: black 0px 2px px;
+
+}
+.loadingText{
+    text-align: center;
+}
+
+
+#topDarkMode{
+    position: fixed;
+    top:-2px;
+    right:0px;
+    height: 50px;
+    width: 50px;
+    z-index: 3;
+    cursor: pointer;
+}
+#topDarkMode:hover .topDarkModeBack{
+    transition: 0.3s;
+    fill: white;
+
+}
+#topDarkMode:hover{
+    transition: 0.3s;
+    transform-origin: right;
+    height: 60px;
+    width: 60px;
+}
+#topDarkMode:hover .topDarkModeLogo{
+    fill: black;
+    transition: 0.3s;
+
+}
+
+.showRooms{
+    margin-right: 2px;
+    background-color: #166E6F;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.showUsers{
+    background-color: #166E6F;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.containner{
+    position: absolute;
+    display: flex;
+    margin: 0px;
+    background-color: teal;
+    height:100%;
+    width: 100%;
+    justify-content: space-around;
+}
+.night-containner{
+    position: absolute;
+    display: flex;
+    margin: 0px;
+    background-color: rgb(14, 34, 34);
+    height:100%;
+    width: 100%;
+    justify-content: space-around;
+}
+.mainBox {
+    height: 100%;
+    background-color: darkgrey;
+    border-radius: 10px;
+    max-width: 60%;
+    flex: 3;
+    transition: 0.5s;
+
+}
+.roomList{
+    height:100%;
+    background-color: rgb(29, 138, 132);
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+
+
+}
+.night-roomList{
+    height:100%;
+    background-color: rgb(18, 61, 65);
+    flex: 1;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    transition: 0.5s;
+
+}
+.onlineList{
+    height: 100%;
+    background-color: rgb(29, 138, 132);
+    flex: 1;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    overflow: auto;
+    overflow-x: hidden;
+
+
+}
+.night-onlineList{
+    
+    height: 100%;
+    background-color: rgb(18, 61, 65);
+    flex: 1;
+    margin-left: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    overflow-x: hidden;
+
+    transition: 0.5s;
+
+}
+.onlineUser{
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+    margin: auto;
+    margin-left:5px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: auto;
+    height: 40px;
+    background-color: #166E6F;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;  
+      
+    transition: 0.5s ease;
+
+}
+.onlineUser-big{
+    margin: auto;
+    padding: 10px 10px 10px 10px;
+    padding-right:10px;
+    margin-top:10px;
+    cursor: pointer;
+    height: 250px;
+    background-color: rgba(39, 36, 36, 0.5);
+    width: 100%;
+    color: white;
+    text-align: justify;
+    justify-content: center;
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+.message-box {
+    height: 90%;
+    width: 100%;
+    background-color: rgb(52, 168, 168);
+    border-radius: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    
+}
+.usersTyping{
+    background-color: rgba(0,0,0,0.3);
+    color:white;
+    position: absolute;
+    padding-left:10px ;
+    padding-right:10px ;
+    top: 0px;
+    left: 50%;
+    transform:translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+
+    
+
+    
+    
+
+}
+.userTyping{
+    flex: 1;
+
+}
+.night-message-box{
+    height: 90%;
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    overflow: auto;
+    transition: 0.5s;
+
+}
+.message-input {
+    margin-top: 0px;
+    height: 30px;
+    width: 90%;
+    border-style: none;
+    background-color: white;
+
+}
+.messageInputBox{
+    display: flex;
+    margin-top: 10px;
+    align-content: center;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.messageInputDiv{
+    flex: 5;
+    margin-left: 10px;
+
+}
+.emojiDiv{
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#emoji-trigger{
+    cursor: pointer;
+
+}
+#emoji-trigger:hover {
+    transition: 0.2s;
+}
+button {
+    border-style: none;
+    border-radius: 2px;
+    background-color: cornflowerblue;
+    margin-left: 10px;
+    color: black;
+}
+button:focus {
+    outline: none;
+}
+.broadcast-message {
+    height: auto;
+    width: 95%;
+    margin: auto;
+    background-color: transparent;
+    color: white;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+    white-space:nowrap;
+    display:flex;
+}
+.messages{
+    display:flex;
+    width: 95%;
+    margin: auto;
+    background-color: transparent;
+    color: white;
+    border-radius: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.messages img{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
+.logout{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    margin: 5px;
+    z-index: 100;
+    transition: 0.5s;
+}
+.logout:hover i{
+    color: crimson;
+    transition: 0.2s;
+}
+
+.userInfo{
+    padding: 0px;
+    height: 30%;
+    width: 100%;
+    color: white;
+    background-size: 100% 100%;
+    overflow: hidden;
+    
+}
+.UserContainer{  
+    background-color: transparent;
+    transition: 0.7s ;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.userImage{
+    
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    overflow:hidden;
+}
+.userUsername{
+    display: flex;
+    justify-items: center;
+    height:auto;
+    overflow: hidden;
+    width: 100%;
+}
+.userInfo:hover .logout{
+    display: block;
+    transition: 0.5s;
+}
+.userInfo:hover .UserContainer{
+    background-color: rgba(0, 0, 0, 1);
+    transition: 0.5s;
+
+}
+.userInfo {
+    background-image: url('https://us.123rf.com/450wm/fokaspokas/fokaspokas1808/fokaspokas180800662/106797514-simple-chat-couple-of-square-text-clouds-linear-icon-with-thin-outline-colorful-logo-concept-with-so.jpg?ver=6');
+
+
+}
+.userInfo h3{
+    margin: auto;
+    transform: translateY(-100px);
+    transition: 0.5s;
+
+}
+
+.userImage img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    transform: translateY(200px);
+    align-self: center;
+
+    transition: 0.5s;
+
+
+}
+.userInfo:hover img{
+    transform: translateY(0px);
+    transition: 0.5s;
+
+}
+.userInfo:hover h3{
+    transform: translateY(0px);
+    transition: 0.5s;
+
+}
+
+
+
+
+
+.newMessage{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: firebrick;
+    color: white;
+    height:15px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 15px;
+    display: none;
+    
+
+}
+.profilePic{
+    height: 70px;
+    width: 70px;
+    border-radius: 30%;
+}
+
+embed{
+    border-style: none;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: gray;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
+
+
+
+
+

@@ -1,0 +1,102 @@
+@import url('./settings/profile.css');
+@import url('./settings/theme.css');
+
+.settings{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    height: 80vh;
+    width: 80vw;
+    min-height: 80vh;
+    min-width: 80vw;
+    box-shadow: rgb(61, 61, 61) 0px 0px 50px;
+
+}
+.settingContainner{ 
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+
+
+}
+.settingTitle{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-weight:500;
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+.closeSettingContainner{
+    height: 30px;
+    width: 100%;
+    position: relative;
+    
+}
+.closeSetting{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: crimson;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.closeSetting:hover{
+    background-color: rgba(189, 13, 48, 0.842);
+}
+.subSettings{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(122, 122, 122, 0.534);
+    overflow: hidden;
+    overflow-x: hidden;
+    backdrop-filter: blur(100px);   
+}
+.setting{
+    color: black;
+    transition: 0.2s;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.setting:hover{
+    color: crimson;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+.subSetting{    
+    color:rgb(232 232 232);
+    margin: 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.settingSelected{
+    color: crimson;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+.toggleSetting{
+    display: flex;
+}
+
+.themeContent{
+    display: none;
+}

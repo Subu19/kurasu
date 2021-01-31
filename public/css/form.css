@@ -1,0 +1,295 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:  rgb(31, 31, 31);
+        overflow: hidden;
+    overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
+}
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    
+}
+.info{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inputArea{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+.logo{
+    height: 50%;
+    width: 50%;
+    transition: 0.5s;
+    animation: logo infinite 2s ease-in-out;
+
+}
+
+@keyframes logo {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+.eyes{
+   animation: eyes infinite 2s ease-in-out;
+    
+}
+@keyframes eyes {
+    0%{
+        fill: D4145A;
+
+    }
+    50%{
+        fill:  rgb(50, 190, 255);;
+    }
+    100%{
+        fill: #D4145A;
+    }
+}
+.intro{
+    height: 0px;
+    width: 80%;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+.info:hover .intro{
+    padding: 10px;
+    height:30%;
+    transition: 0.5s;
+    overflow: initial;
+}
+.info p {
+    transition: 0.5s;
+}
+.info:hover p{
+    border-left-style: solid;
+    border-width: 1px;
+    border-color: rgb(0, 255, 13);
+    transition: 0.5s;
+    padding: 10px;
+
+}
+
+.options{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options .loginDiv{
+    color: white;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-bottom-style: solid;
+}
+.options .registerDiv{
+    color: white;
+    height: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.formContainner {
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+}
+.loginForm{
+    height: 500px;
+    background-color: teal;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.inputDiv{
+    margin: auto;
+    position: relative;
+}
+
+
+input{
+
+    position: relative;
+    outline: none;
+    border-style: none;
+    border-radius: 2px;
+    height: 30px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-color: black;
+    border-radius: 3px;
+    border-width: 4px;
+    transition: 0.2s;
+    
+
+}
+
+input:focus {
+    border-color: rgb(1, 105, 1);
+}
+input:valid{
+    border-color: rgb(1, 105, 1);
+
+}
+input:focus + span{
+    transform: translateY(-40px);
+    color: white;
+    transition: 0.2s;
+}
+input:valid + span{
+    transform: translateY(-40px);
+    color: white;
+    transition: 0.2s;
+}
+span{
+    padding: 2px;
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+}
+
+.button{
+    
+    height: 40px;
+    width: 100px;
+    margin: auto;
+    margin-top:10px;
+    background-image: linear-gradient(to right, #085C3E 50%, rgb(0, 255, 221) 50%);
+    background-position: left;
+    transform-origin: left;
+    transition: background-position 0.5s;
+    background-size: 200% 100%;
+    cursor: pointer;
+    color: white;
+
+}
+.button:hover{
+    background-position: -100% 0;
+    color: black;
+
+}
+.button:hover button{
+    color: black;
+}
+.button button{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+
+
+}
+.registerForm{
+    height: 500px;
+    background-color: crimson;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+
+}
+@media screen and (max-width: 700px){
+    body{
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .info{
+        flex:none;
+    }
+    .inputArea{
+        flex: none;
+    }
+    
+    
+    .main{
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
+}
+.hidden{
+    display: none;
+}
+i{
+    cursor: pointer;
+}
+.profile{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profilePic2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+.alert{
+    border-radius: 4px;
+    color: red;
+    padding: 3px;
+    height: 30px;
+}

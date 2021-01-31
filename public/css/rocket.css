@@ -1,0 +1,268 @@
+body{
+    overflow: hidden;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#main{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    height: 100vh;
+    width: 95%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: transparent;
+}
+.star1{
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    background-color: white;
+    left: 10%;
+    top: -50px;
+}
+.star2{
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    background-color: white;
+    left: 20%;
+    top: -50px;
+}
+.star3{
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    background-color: white;
+    left: 30%;
+    top: -50px;
+}
+.star4{
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    background-color: white;
+    left: 40%;
+    top: -50px;
+}
+.star5{
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    background-color: white;
+    left: 50%;
+    top: -50px;
+}
+.star6{
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    background-color: white;
+    left: 60%;
+    top: -50px;
+}
+.star7{
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    background-color: white;
+    left: 70%;
+    top: -50px;
+}
+.star8{
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    background-color: white;
+    left: 80%;
+    top: -50px;
+}
+.star9{
+    position: absolute;
+    height: 50px;
+    width: 5px;
+    background-color: white;
+    left: 90%;
+    top: -50px;
+}
+.star{
+    opacity: 0.8;
+}
+.rocket{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 400px; */
+    
+}
+
+
+#fire{
+    transition:1s;
+    animation: fire infinite ease-in-out 1s;
+    transform-origin: center;
+}
+@keyframes fire {
+    0%{
+        /* fill: #EA9D2D; */
+        transform: scale(1);
+    }
+    50%{
+        /* fill: tomato; */
+        transform: scale(1.2);
+
+    }
+    100%{
+        /* fill: #EA9D2D; */
+        transform: scale(1);
+
+    }
+}
+
+.stone{
+    position: absolute;
+    background-color: gray;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-image: url('/stone-texture.jpg');
+    
+}
+
+.score{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 5rem;
+    width: 10rem;
+    font-family: 'Righteous', cursive;
+    border-left-style: groove;
+    border-top-style: groove;
+    border-bottom-style: dashed;
+    border-right-style: dashed;
+    border-width: 5px;
+    border-color:rgb(240, 165, 27);
+    color: rgb(255, 217, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.menu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url('/earth.jpg');
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    z-index: 1000;
+    flex-direction: column;
+}
+.rocketImg{
+    background-image: url('/rocket.png');
+    height: 150px;
+    width: 250px;
+    background-size: 100% 100%;
+}
+#rocket-title{
+    height: 30%;
+    width: 35%;
+
+
+}
+.startGame{
+    height: 50px;
+    width: 150px;
+    color: wheat;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: cyan;
+    background-image: linear-gradient(to right, crimson 50%, white 50%);
+    background-position: left;
+    transform-origin: left;
+    transition: background-position 0.5s;
+    background-size: 200% 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.startGame:hover{
+    background-position: right;
+    color: crimson;
+}
+
+.gameOverMenu{
+    position: absolute;
+    height: 250px;
+    width: 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-color: goldenrod;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    overflow: hidden;
+}
+.gameOverScore{
+    margin-top: 10px;
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: coral;
+    font-family: 'Righteous', cursive;
+    flex-direction: column;
+    
+    background-color: darkcyan;
+
+}
+.restart{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restartButton{
+    height: 30px;
+    width: 70px;
+    color: wheat;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 2px;
+    border-color: cyan;
+    background-image: linear-gradient(to right, green 50%, white 50%);
+    background-position: left;
+    transform-origin: left;
+    transition: background-position 0.5s;
+    background-size: 200% 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.restartButton:hover{
+    background-position: right;
+    color: crimson;
+}

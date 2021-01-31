@@ -1,0 +1,235 @@
+@media screen and (max-width: 800px){
+    body {
+        background-color: darkcyan;
+        margin: 0px;
+        height: 100%;
+        font-family: Arial;
+    }
+    .night-body{
+        background-color:#052631;
+        margin: 0px;
+        font-family:Arial;
+    }
+    
+    .showRooms{
+        margin-right: 2px;
+        background-color: #166E6F;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        padding-top: 2px;
+        cursor: pointer;
+        
+    }
+    .showUsers{
+        background-color: #166E6F;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        padding-top: 2px;
+        cursor: pointer;
+    }
+    .containner{
+        display: block;
+        margin: 0px;
+        background-color: teal;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+        
+    }
+    .night-containner{
+        position: absolute;
+        margin: 0px;
+        background-color: rgb(14, 34, 34);
+        bottom: 0px;
+        top:0px;
+        height:100%;
+        width: 100%;
+        justify-content: space-around;
+        
+    }
+    .mainBox {
+        height: 100%;
+        background-color: darkgrey;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 100%;
+        
+    }
+    .roomList{
+        position: absolute;
+        top: 0px;
+        right: 100%;
+        float: left;
+        height: 100%;
+        width: 0px;
+        transform: translateX(100%);
+        transform-origin: left; 
+        overflow: hidden;
+        margin-left: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+        background-color: rgb(29, 138, 132);
+    
+
+    
+    
+    }
+    .night-roomList{
+        position: absolute;
+        top: 0px;
+        right: 100%;
+        float: left;
+        height: 100%;
+        width: 0px;
+        transform: translateX(100%);
+        transform-origin: left; 
+        overflow: hidden;
+        margin-left: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+        background-color: rgb(18, 61, 65);
+    }
+    .onlineList{
+        position: absolute;
+        top: 0px;
+        left: 100%;
+        float: left;
+        height: 100%;
+        width: 0px;
+        transform: translateX(-100%);
+        transform-origin: left; 
+        overflow: hidden;
+        background-color: rgb(29, 138, 132);
+        margin-left: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+    
+    
+    }
+    .night-onlineList{
+        position: absolute;
+        top: 0px;
+        left: 100%;
+        float: left;
+        height: 100%;
+        width: 0px;
+        transform: translateX(-100%);
+        transform-origin: left; 
+        overflow: hidden;
+        margin-left: 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+        background-color: rgb(18, 61, 65);
+    }
+    .onlineUser{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        height: 50px;
+        width: auto;
+        background-color: #166E6F;
+        color: white;
+        border-radius: 10px;
+        margin-top: 10px;    
+    
+    
+    }
+    .message-box {
+        height: 90%;
+        width: 100%;
+        background-color: rgb(52, 168, 168);
+        border-radius: 10px;
+        transition: 0.5s;
+        overflow: auto;
+        
+    }
+    .night-message-box{
+        height: 90%;
+        width: 100%;
+        background-color: rgb(70, 70, 70);
+        border-radius: 10px;
+        overflow: auto;
+    }
+    .message-input {
+        margin-top: 0px;
+        height: 30px;
+        width: 90%;
+        border-style: none;
+        background-color: white;
+    
+    }
+    .messageInputBox{
+        display: flex;
+        margin-top: 10px;
+        align-content: center;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .messageInputDiv{
+        flex: 5;
+        margin-left: 10px;
+    
+    }
+    .emojiDiv{
+        flex: 1;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    button {
+        border-style: none;
+        border-radius: 2px;
+        background-color: cornflowerblue;
+        margin-left: 10px;
+        color: black;
+    }
+    button:focus {
+        outline: none;
+    }
+    .broadcast-message {
+        height: auto;
+        width: 95%;
+        margin: auto;
+        background-color: transparent;
+        color: white;
+        border-radius: 2px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .messages{
+        height: auto;
+        width: 95%;
+        margin: auto;
+        background-color: transparent;
+        color: white;
+        border-radius: 2px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .newMessage{
+        position: fixed;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        background-color: firebrick;
+        color: white;
+        height:15px;
+        width: 150px;
+        border-radius: 10px;
+        font-size: 15px;
+        display: none;
+        
+    
+    }
+
+
+
+
+    
+}

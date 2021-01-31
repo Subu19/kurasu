@@ -1,0 +1,50 @@
+.settProfile{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+}
+.settProfile img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: rgba(92, 92, 92, 0.466) 0px 0px 20px;
+}
+
+.settProfile h2{
+    
+}
+.editProfileBox{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.166);
+}
+.editProfileBox i {
+    cursor: pointer;
+}
+.editProfileBox img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+   
+
+}
+.saveProfile{
+    height: 40px;
+    width: 70px;
+    background-color: crimson;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    box-shadow: gray 0px 0px 5px;
+    font-size: 15px;
+    margin: 10px;
+}
+.saveProfile:hover{
+    background-color: rgb(182, 16, 49);
+    cursor: pointer;
+}

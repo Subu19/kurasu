@@ -1,0 +1,50 @@
+.themes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.theme{
+    height: 150px;
+    width: 190px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    cursor: pointer;
+
+}
+.themeTitle{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.theme:hover .themeTitle{
+    background-color: crimson;
+    color: white;
+}
+.colorPicker{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    background-color: transparent;
+}
+.colorBox{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.blackBox{
+    background-color: black;
+    float: left;
+}
+.whiteBox{
+    background-color: white;
+    float: left;
+}

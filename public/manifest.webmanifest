@@ -1,0 +1,15 @@
+{
+    "background_color": "white",
+    "description": "KuraSu is a live group chat which is still under maintainance. If you are reading this then you arelooking at Alphaversion of KuraSu.",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "Kurakani-logo.png",
+            "sizes": "604x604",
+            "type": "image/png"
+        }
+    ],
+    "name": "Kurasu-Chat",
+    "short_name": "Kurasu",
+    "start_url": "chat/KaKT"
+}
