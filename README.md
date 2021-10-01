@@ -16,3 +16,12 @@ Installation Method:
   "Uri": "your uri of mongoDB";
  }
  ```
+## Author
+
+**Author Name** &nbsp; : &nbsp; Subu <br>
+**GitHub URI** &nbsp; &nbsp; &nbsp; : &nbsp; [Subu19](https://github.com/subu19)
+ 
+## Contributors
+
+List of all Contributors:
+- [The Sewak](#)
