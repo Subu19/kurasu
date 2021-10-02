@@ -8,7 +8,11 @@ KuraSu is a live group chat which is still under maintainance. If you are readin
  - Play videos directly on chat,
  - Messages are not saved for privacy.
 
-Installation Method:
+## Prerequisites
+ -nodejs
+ -mongoDB
+ 
+## Installation
  > make config.json on main root
 # Config.json file format
  ```js
@@ -16,6 +20,15 @@ Installation Method:
   "Uri": "your uri of mongoDB";
  }
  ```
+You can `fork` the project.
+
+[Fork](https://github.com/askbuddie/readme/fork)
+
+You can clone the whole project.
+
+```
+git clone https://github.com/Subu19/kurasu.git
+```
 ## Author
 
 **Author Name** &nbsp; : &nbsp; Subu <br>
